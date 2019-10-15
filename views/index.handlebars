@@ -17,7 +17,12 @@
                     <ol>
                         {{#each burgers}}
                         {{#unless devoured}}
-                        {{>burgers/burger-block}}
+                       <h1> {{this.burger_name}} 
+                           <button type="button" class="devour-burger btn btn-danger mb-3" id="devour-btn"
+                            data-id="{{this.id}}" data-newDevoured="{{devour}}">
+                            Devour ME!!
+                        </button>
+                       </h1>
                         {{/unless}}
                         {{/each}}
                     </ol>

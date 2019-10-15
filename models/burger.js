@@ -1,4 +1,4 @@
-var orm = require("../config/orm");
+var orm = require("../config/orm.js");
 
 
 
@@ -21,4 +21,4 @@ var burger = {
 }
 
 
-module.export = burger; 
+module.exports = burger; 
